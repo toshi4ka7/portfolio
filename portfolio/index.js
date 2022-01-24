@@ -1,6 +1,7 @@
-const hamburger = document.querySelector('.hamburger');
+const menu = new Menu('.burger', {
+  breakPoint: 767,
+  container: 'burger-menu',
+  menu: '#menu',
+});
 
-function toggleMenu() {
-  hamburger.classList.toggle('open');
-}
-hamburger.addEventListener('click', toggleMenu);
+window.menu = menu;
