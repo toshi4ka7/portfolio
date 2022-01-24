@@ -28,7 +28,6 @@ svg:hover {
 
 .container {
     max-width: 144rem;
-    width: 144rem;
     margin: 0 auto;
     position: relative;
 }
@@ -93,7 +92,7 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 
 /* HEADER */
 .header {
-    width: 144rem;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -105,10 +104,13 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 .logo {
     width: 5rem;
 }
+.nav {
+    display: flex;
+}
 .menu {
     display: flex;
     justify-content: space-between;
-    width: 54rem;
+    width: 44rem;
     list-style-type: none;
 }
 .menu_link {
@@ -120,22 +122,23 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 .menu_link:hover {
     color: #BDAE82;
 }
-.menu_lang {
+.lang {
     font-size: 2rem;
     color: #fff;
     font-weight: bold;
+    margin-left: 3rem;
 }
-.menu_lang-item {
+.lang_item {
     transition: all .2s;
 }
-.menu_lang-item:hover {
+.lang_item:hover {
     color: #BDAE82;
     cursor: pointer;
 }
-.menu_lang-item:first-child {
+.lang_item:first-child {
     margin-right: 7px;
 }
-.menu_lang-item.active {
+.lang_item.active {
     color: #BDAE82;
 }
 
@@ -146,11 +149,14 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
     padding: 0 2rem;
     height: 91rem;
     background-image: url('./assets/bg.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
     padding-top: 25rem;
     padding-left: 8rem;
 }
 .hero_content {
-    width: 49rem;
+    max-width: 49rem;
 }
 .hero_title {
     font-family: Merriweather;
@@ -170,6 +176,7 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 .skills_content {
     display: flex;
     justify-content: space-between;
+    /* flex-wrap: wrap; **/
     margin-bottom: 1.1rem;
 }
 .skills_card {

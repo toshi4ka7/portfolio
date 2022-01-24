@@ -1,0 +1,55 @@
+.none {
+    display: none;
+}
+
+@media (max-width: 1439px) {
+
+}
+
+@media (max-width: 1200px) {
+    /* Hero */
+    .hero {
+        height: 75rem;
+    }
+
+
+    /* Skills */
+    .skills_content {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+      padding: 0 6rem;
+    }
+    .menu {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        height: 59rem;
+        padding-top: 17rem;
+        padding-left: 6rem;
+    }
+    .hero_content {
+      max-width: 39rem;
+    }
+    .hero_title {
+        font-size: 3.2rem;
+        line-height: 6.4rem;
+        margin-bottom: 2rem;
+    }
+    .hero_description {
+        line-height: 2.4rem;
+        margin-bottom: 6rem;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+}
