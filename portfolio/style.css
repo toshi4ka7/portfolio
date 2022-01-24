@@ -142,6 +142,44 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
     color: #BDAE82;
 }
 
+.burger {
+	width: 5rem;
+  height: 2.8rem;
+  margin-left: 2.1rem;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  cursor: pointer;
+}
+.burger:before,
+.burger:after,
+.burger_line {
+	content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    transition: background 0.5s;
+    transition: transform 0.3s;
+}
+
+.burger.active .burger_line {
+	display: none;
+}
+.burger.active:before {
+	position: absolute;
+  top: 45%;
+  transform: rotate(45deg);
+}
+.burger.active:after {
+	position: absolute;
+  top: 45%;
+  width: 100%;
+  transform: rotate(-45deg);
+}
+
 
 
 /*  HERO */
@@ -149,9 +187,8 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
     padding: 0 2rem;
     height: 91rem;
     background-image: url('./assets/bg.jpg');
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
+		background-position: center;
+		background-size: cover;
     padding-top: 25rem;
     padding-left: 8rem;
 }
@@ -176,12 +213,11 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 .skills_content {
     display: flex;
     justify-content: space-between;
-    /* flex-wrap: wrap; **/
-    margin-bottom: 1.1rem;
 }
 .skills_card {
     width: 32rem;
     text-align: center;
+		margin-bottom: 1.1rem;
 }
 .skills_card-icon {
     margin-bottom: 4.5rem;
@@ -213,12 +249,16 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
     justify-content: space-between;
 }
 .portfolio_item {
-    width: 45rem;
-    height: 56rem;
+    max-width: 45rem;
+    max-height: 56rem;
     margin-top: 2.5rem;
 }
 
 /* Video */
+.video {
+	padding-left: 0;
+	padding-right: 0;
+}
 .video_content {
     position: relative;
 }
@@ -228,17 +268,29 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.video_image {
+	display: block;
+	max-width: 140rem;
+	width: 100%;
+	background-image: url('./assets/video-player.jpg');
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 70.5rem;
+	margin: 0 auto;
+}
 .video_player:hover {
     cursor: pointer;
 }
 
 /* Price */
 .price {
-    padding-top: 9.6rem;
+    padding-top: 10rem;
     padding-bottom: 10rem;
 }
 .price_cards {
     display: flex;
+		flex-wrap: wrap;
     justify-content: space-between;
 }
 .price_card {
@@ -280,6 +332,11 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 /* Contacts */
 .contacts {
     position: relative;
+		height: 70rem;
+		background-image: url('./assets/contacts.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 }
 .contacts_form {
     position: absolute;
@@ -300,19 +357,19 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 .form_email,
 .form_tel {
     border: 2px solid #BDAE82;
+		background-color: rgba(0, 0, 0, 0.5);
     height: 5rem;
     outline: none;
     margin-bottom: 2rem;
-    background-color: transparent;
     font-size: 2rem;
     color: #BDAE82;
     padding: 2rem;
 }
 .form_message {
+		background-color: rgba(0, 0, 0, 0.5);
     height: 10rem;
     border: 2px solid #BDAE82;
     outline: none;
-    background-color: transparent;
     font-size: 2rem;
     color: #BDAE82;
     padding: 1rem 2rem;
@@ -323,7 +380,7 @@ textarea::-webkit-input-placeholder { color: #BDAE82 }
 /* Footer */
 .footer {
     display: flex;
-    height: 14rem;
+    height: 15rem;
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;

@@ -3,7 +3,26 @@
 }
 
 @media (max-width: 1439px) {
+    /* Portfolio */
+    .portfolio_galereya {
+        justify-content: center;
+    }
+    .portfolio_item {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem;
+    }
+    .portfolio-btns .btn {
+        margin-bottom: 0.5rem;
+    }
 
+    /* Price */
+    .price_cards {
+        justify-content: space-around;
+    }
+    .price_card {
+        margin: 0 2rem;
+        margin-bottom: 5rem;
+    }
 }
 
 @media (max-width: 1200px) {
@@ -12,21 +31,40 @@
         height: 75rem;
     }
 
-
     /* Skills */
     .skills_content {
         flex-wrap: wrap;
         justify-content: space-around;
     }
+    .skills_card {
+        margin-bottom: 7.5rem;
+    }
 }
 
 @media (max-width: 768px) {
+    /* wrapper*/
+
+    /* wrapper_title */
+    .wrapper_title {
+        font-size: 3.2rem;
+        line-height: 4rem;
+        margin-bottom: 6.5rem;
+    }
+    .wrapper_title:before,
+    .wrapper_title:after {
+        width: 11.6rem;
+    }
+
+
     /* Header */
     .header {
-      padding: 0 6rem;
+      padding: 0 6.4rem 0 6rem;
     }
     .menu {
         display: none;
+    }
+    .burger {
+        display: flex;
     }
 
     /* Hero */
@@ -48,8 +86,120 @@
         margin-bottom: 6rem;
     }
 
+    /* Skills */
+    .skills_content {
+        padding: 0 2rem;
+    }
+    .skills_card-icon {
+        margin-bottom: 2.5rem;
+    }
+    .skills_card-title {
+        margin-bottom: 2.2rem;
+    }
+    .skills_card-desc {
+        line-height: 2.2rem;
+    }
+
+    /* Portfolio */
+    .portfolio {
+        padding-top: 10.5rem;
+    }
+    .portfolio-title {
+        margin-bottom: 6.9rem;
+    }
+    .portfolio-title:after,
+    .portfolio-title:before {
+        width: 9rem;
+    }
+    .portfolio-btns {
+        max-width: 50rem;
+        margin: 0 auto 3rem auto;
+    }
+    .portfolio_item {
+        margin-left: 0rem;
+        margin-right: 0rem;
+        width: 100%;
+        display: block;
+    }
+
+    /* Video */
+    .video_title {
+        margin-bottom: 7rem;
+    }
+    .video_image {
+        height: 41.8rem;
+        background-size: cover;
+    }
+    .video_player {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    .video_title {
+        padding: 0 2rem;
+    }
+
+    /* Price */
+    .price {
+        padding-bottom: 3rem;
+    }
+    .price_title {
+        margin-bottom: 7rem;
+    }
+    .price_card {
+        width: 42rem;
+    }
+
+    /* Contacts */
+    .contacts {
+        height: 60rem;
+        padding: 6rem 2rem 0;
+    }
+    .contacts_form {
+        text-align: center;
+        position: static;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 45rem;
+    }
+    .contacts_btn {
+        margin: 0 auto;
+    }
+    .contacts_title {
+        font-size: 3.2rem;
+        line-height: 6.4rem;
+    }
+
+    /* Footer */
+    .footer {
+        flex-direction: column;
+        padding-top: 2.8rem;
+        padding-bottom: 3.5rem;
+        height: 19rem;
+    }
+    .footer_rss {
+        position: relative;
+        top: -1rem;
+    }
+    .footer_copyright {
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 480px) {
+    /* Header */
+    .header {
+        padding: 0 2rem 0 2rem;
+    }
 
+    /* Hero */
+    .hero {
+        padding-top: 17rem;
+        padding-left: 2rem;
+    }
+
+    /* Skills */
+    .skills_content {
+        padding: 0;
+    }
 }
